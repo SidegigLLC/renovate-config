@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "config:js-app",
+    "schedule:nonOfficeHours",
+    "packages:linters",
+    "npm:unpublishSafe",
+    ":rebaseStalePrs",
+    ":label(renovate)",
+    ":timezone(America/New_York)"
+  ],
+  "assigneesSampleSize": 1,
+  "prCreation": "not-pending",
+  "major": {
+    "dependencyDashboardApproval": true
+  },
+  "packageRules": [
+    {
+      "description": "Automatically merge minor and patch-level updates",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 3am on the first day of the month"]
+  }
+}
