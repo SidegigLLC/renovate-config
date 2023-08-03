@@ -1,13 +1,18 @@
 {
   "extends": [
     "config:js-app",
-    "packages:linters",
+    "group:linters",
+    "group:unitTest",
     "npm:unpublishSafe",
     ":rebaseStalePrs",
     ":label(renovate)",
     ":timezone(America/New_York)",
     ":automergeTesters",
     ":automergeLinters",
+    ":automergeTypes",
+    ":automergeMinor",
+    ":automergePatch",
+    ":automergeBranch",
     ":enableVulnerabilityAlerts"
   ],
   "prCreation": "not-pending",
@@ -15,21 +20,14 @@
   "major": {
     "dependencyDashboardApproval": true
   },
-  "packageRules": [
-    {
-      "description": "Automatically merge minor and patch-level updates",
-      "matchUpdateTypes": ["minor", "patch", "digest"],
-      "automerge": true,
-      "automergeType": "branch"
-    }
-  ],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 3am on the first day of the month"]
+    "schedule": ["before 2am on the first day of the month"]
   },
   "schedule": [
-    "before 8am on Tuesday",
-    "before 8am on Wednesday",
-    "before 8am on Thursday"
-  ]
+    "before 3am and after 8pm on Tuesday",
+    "before 3am and after 8pm on Wednesday",
+    "before 3am and after 8pm on Thursday"
+  ],
+  "minimumReleaseAge": 3
 }
