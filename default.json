@@ -17,6 +17,7 @@
   ],
   "prCreation": "not-pending",
   "prConcurrentLimit": 2,
+  "branchConcurrentLimit": 5,
   "major": {
     "dependencyDashboardApproval": true
   },
@@ -25,9 +26,11 @@
     "schedule": ["before 2am on the first day of the month"]
   },
   "schedule": [
+    "after 8pm on Monday",
     "before 3am and after 8pm on Tuesday",
     "before 3am and after 8pm on Wednesday",
-    "before 3am and after 8pm on Thursday"
+    "before 3am and after 8pm on Thursday",
+    "before 3am on Friday",
   ],
   "minimumReleaseAge": 3
 }
