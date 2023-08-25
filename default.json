@@ -32,5 +32,17 @@
     "before 3am and after 8pm on Thursday",
     "before 3am on Friday",
   ],
-  "minimumReleaseAge": 3
+  "minimumReleaseAge": 3,
+  "packageRules": [
+    {
+      "groupName": "Zodios",
+      "matchDatasources": ["npm"],
+      "matchPackagePatterns": ["@zodios"]
+    },
+    {
+      "groupName": "Stripe",
+      "matchDatasources": ["npm"],
+      "matchPackagePatterns": ["@stripe"]
+    }
+  ]
 }
