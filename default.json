@@ -43,6 +43,9 @@
       "groupName": "Stripe",
       "matchDatasources": ["npm"],
       "matchPackagePatterns": ["@stripe"]
+    },
+    {
+       "matchSourceUrls": ["https://github.com/mui/mui-x"]
     }
   ]
 }
