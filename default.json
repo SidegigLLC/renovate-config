@@ -45,6 +45,11 @@
       "matchPackagePatterns": ["@stripe"]
     },
     {
+      "groupName": "Radix UI",
+      "matchDatasources": ["npm"],
+      "matchPackagePatterns": ["@radix-ui"]
+    },
+    {
       "groupName": "Mui X",
       "matchSourceUrls": ["https://github.com/mui/mui-x"]
     }
