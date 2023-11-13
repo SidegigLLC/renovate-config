@@ -50,8 +50,12 @@
       "matchPackagePatterns": ["@radix-ui"]
     },
     {
-      "groupName": "Mui X",
+      "groupName": "MUI X",
       "matchSourceUrls": ["https://github.com/mui/mui-x"]
+    },
+    {
+      "groupName": "Next.js",
+      "matchSourceUrls": ["https://github.com/vercel/next.js"]
     }
   ]
 }
