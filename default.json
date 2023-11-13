@@ -26,11 +26,7 @@
     "schedule": ["before 2am on the first day of the month"]
   },
   "schedule": [
-    "after 8pm on Monday",
-    "before 6am and after 8pm on Tuesday",
-    "before 6am and after 8pm on Wednesday",
-    "before 6am and after 8pm on Thursday",
-    "before 6am on Friday",
+    "before 6am, after 8pm on every weekday",
   ],
   "minimumReleaseAge": 3,
   "packageRules": [
