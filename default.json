@@ -17,7 +17,7 @@
   ],
   "prCreation": "not-pending",
   "prConcurrentLimit": 2,
-  "branchConcurrentLimit": 3,
+  "branchConcurrentLimit": 2,
   "major": {
     "dependencyDashboardApproval": true
   },
