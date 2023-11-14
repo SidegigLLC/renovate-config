@@ -26,7 +26,7 @@
     "schedule": ["before 2am on the first day of the month"]
   },
   "schedule": [
-    "after 8pm also before 6am on every weekday",
+    "[after 8pm, before 6am] every weekday",
   ],
   "minimumReleaseAge": 3,
   "packageRules": [
