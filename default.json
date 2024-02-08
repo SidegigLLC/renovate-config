@@ -33,18 +33,15 @@
   "packageRules": [
     {
       "groupName": "Zodios",
-      "matchDatasources": ["npm"],
-      "matchPackagePatterns": ["@zodios"]
+      "matchPackagePrefixes": ["@zodios"]
     },
     {
       "groupName": "Stripe",
-      "matchDatasources": ["npm"],
-      "matchPackagePatterns": ["@stripe"]
+      "matchPackagePatterns": ["stripe"]
     },
     {
       "groupName": "Radix UI",
-      "matchDatasources": ["npm"],
-      "matchPackagePatterns": ["@radix-ui"]
+      "matchPackagePrefixes": ["@radix-ui"]
     },
     {
       "groupName": "MUI X",
