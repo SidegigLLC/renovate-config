@@ -41,6 +41,10 @@
       "schedule": ["before 6am on monday"]
     },
     {
+      "extends": "group:storybookMonorepo",
+      "schedule": ["before 6am on tuesday"]
+    },
+    {
       "groupName": "Radix UI",
       "matchPackagePrefixes": ["@radix-ui"]
     },
