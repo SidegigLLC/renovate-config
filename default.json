@@ -23,7 +23,7 @@
   },
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 2am on the first day of the month"]
+    "schedule": ["before 6am on the first day of the month"]
   },
   "schedule": [
     "before 6am every weekday",
@@ -37,7 +37,8 @@
     },
     {
       "groupName": "Stripe",
-      "matchPackagePatterns": ["stripe"]
+      "matchPackagePatterns": ["stripe"],
+      "schedule": ["before 6am on monday"]
     },
     {
       "groupName": "Radix UI",
