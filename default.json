@@ -13,7 +13,8 @@
     ":automergeMinor",
     ":automergePatch",
     ":automergeBranch",
-    ":enableVulnerabilityAlerts"
+    ":enableVulnerabilityAlerts",
+    "customManagers:biomeVersions"
   ],
   "prCreation": "not-pending",
   "prConcurrentLimit": 2,
