@@ -34,10 +34,6 @@
   "minimumReleaseAge": 3,
   "packageRules": [
     {
-      "groupName": "Zodios",
-      "matchPackagePrefixes": ["@zodios"]
-    },
-    {
       "groupName": "Stripe",
       "matchPackagePatterns": ["stripe"],
       "schedule": ["before 6am on monday"]
@@ -45,18 +41,6 @@
     {
       "extends": "group:storybookMonorepo",
       "schedule": ["before 6am on tuesday"]
-    },
-    {
-      "groupName": "Radix UI",
-      "matchPackagePrefixes": ["@radix-ui"]
-    },
-    {
-      "groupName": "MUI X",
-      "matchSourceUrls": ["https://github.com/mui/mui-x"]
-    },
-    {
-      "groupName": "Next.js",
-      "matchSourceUrls": ["https://github.com/vercel/next.js"]
     },
     {
       "matchPackagePrefixes": ["@types"],
