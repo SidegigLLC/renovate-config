@@ -65,10 +65,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": ["/^braze-service-worker.js$/"],
+      "managerFilePatterns": ["/(^|/)braze-service-worker.js$/"],
       "matchStrings": ["web-sdk\/(?<currentValue>.*?)\/"],
-      "depNameTemplate": "@braze/web-sdk Service Worker",
-      "packageNameTemplate": "@braze/web-sdk",
+      "depNameTemplate": "@braze/web-sdk",
       "datasourceTemplate": "npm"
     }
   ]
