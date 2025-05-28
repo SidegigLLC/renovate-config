@@ -69,6 +69,13 @@
       "matchStrings": ["web-sdk\/(?<currentValue>.*?)\/"],
       "depNameTemplate": "@braze/web-sdk",
       "datasourceTemplate": "npm"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/)index.html$/"],
+      "matchStrings": ["analytics.SNIPPET_VERSION.*=.*\"(?<currentValue>.*?)\""],
+      "depNameTemplate": "@segment/snippet",
+      "datasourceTemplate": "npm"
     }
   ]
 }
