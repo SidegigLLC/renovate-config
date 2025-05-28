@@ -51,6 +51,15 @@
       "matchPackagePatterns": ["eslint"],
       "groupName": "eslint",
       "schedule": ["on the first day of the month"]
+    },
+    {
+      "groupName": "T3 Env",
+      "matchPackageNames": ["@t3-oss/env{/,}**"]
+    },
+    {
+      "groupName": "Playwright",
+      "matchDatasources": ["docker", "npm"],
+      "matchPackageNames": ["/playwright/"]
     }
   ]
 }
