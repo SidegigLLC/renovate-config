@@ -61,21 +61,5 @@
       "matchDatasources": ["docker", "npm"],
       "matchPackageNames": ["/playwright/"]
     }
-  ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "managerFilePatterns": ["/(^|/)braze-service-worker.js$/"],
-      "matchStrings": ["web-sdk\/(?<currentValue>.*?)\/"],
-      "depNameTemplate": "@braze/web-sdk",
-      "datasourceTemplate": "npm"
-    },
-    {
-      "customType": "regex",
-      "managerFilePatterns": ["/(^|/)index.html$/"],
-      "matchStrings": ["analytics.SNIPPET_VERSION.*=.*\"(?<currentValue>.*?)\""],
-      "depNameTemplate": "@segment/snippet",
-      "datasourceTemplate": "npm"
-    }
   ]
 }
