@@ -4,6 +4,7 @@
     "config:js-app",
     "group:linters",
     "group:unitTest",
+    "group:playwrightMonorepo",
     "npm:unpublishSafe",
     ":rebaseStalePrs",
     ":label(renovate)",
