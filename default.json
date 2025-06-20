@@ -4,7 +4,6 @@
     "config:js-app",
     "group:linters",
     "group:unitTest",
-    "group:playwrightMonorepo",
     "npm:unpublishSafe",
     ":rebaseStalePrs",
     ":label(renovate)",
@@ -58,9 +57,19 @@
       "matchPackageNames": ["@t3-oss/env{/,}**"]
     },
     {
-      "groupName": "Playwright",
+      "groupName": "playwright monorepo",
+      "matchPackageNames": [
+        "playwright",
+        "@playwright/test",
+        "mcr.microsoft.com/playwright",
+      ],
       "matchDatasources": ["docker", "npm"],
-      "matchPackageNames": ["/playwright/"]
-    }
+      "matchUpdateTypes": [
+        "digest",
+        "patch",
+        "minor",
+        "major"
+      ]
+    },
   ]
 }
