@@ -61,7 +61,7 @@
       "matchPackageNames": [
         "playwright",
         "@playwright/test",
-        "mcr.microsoft.com/playwright",
+        "mcr.microsoft.com/playwright"
       ],
       "matchDatasources": ["docker", "npm"],
       "matchUpdateTypes": [
